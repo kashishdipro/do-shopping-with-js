@@ -33,7 +33,7 @@
     <!-- Main Start -->
     <main class="w-9/12 mx-auto my-10">
         <!-- Products Section Start -->
-        <section class="grid grid-cols-2 gap-4">
+        <section class="grid grid-cols-2 gap-4 divide-x">
             <!-- Products Info Start -->
             <div class="grid grid-cols-2 gap-4">
                 <div>
@@ -43,7 +43,7 @@
                             <h2 class="card-title">Coffee JS</h2>
                             <p>Price: $ <span>108</span></p>
                             <div class="card-actions justify-end">
-                               <button class="btn btn-primary">Buy Now</button>
+                               <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -52,10 +52,10 @@
                     <div class="card w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/heart_js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Coffee JS</h2>
-                            <p>Price: $ <span>108</span></p>
+                            <h2 class="card-title">Heart JS</h2>
+                            <p>Price: $ <span>113</span></p>
                             <div class="card-actions justify-end">
-                               <button class="btn btn-primary">Buy Now</button>
+                               <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -64,10 +64,10 @@
                     <div class="card w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/panda.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Coffee JS</h2>
-                            <p>Price: $ <span>108</span></p>
+                            <h2 class="card-title">Panda JS</h2>
+                            <p>Price: $ <span>112</span></p>
                             <div class="card-actions justify-end">
-                               <button class="btn btn-primary">Buy Now</button>
+                               <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -76,10 +76,10 @@
                     <div class="card w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/umbrella.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Coffee JS</h2>
-                            <p>Price: $ <span>108</span></p>
+                            <h2 class="card-title">Umbrella JS</h2>
+                            <p>Price: $ <span>105</span></p>
                             <div class="card-actions justify-end">
-                               <button class="btn btn-primary">Buy Now</button>
+                               <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -88,16 +88,39 @@
                     <div class="card w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/vue-js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Coffee JS</h2>
-                            <p>Price: $ <span>108</span></p>
+                            <h2 class="card-title">Vue JS</h2>
+                            <p>Price: $ <span>125</span></p>
                             <div class="card-actions justify-end">
-                               <button class="btn btn-primary">Buy Now</button>
+                               <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Products Info End -->
+                
+            <!-- Cart Start -->
+            <div>
+                <h2 class="text-4xl text-center">Total added Products <span id="count-products" class="text-blue-500">0</span></h2>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- Table Head Start -->
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>PRODUCT NAME</th>
+                                <th>PRICE</th>
+                            </tr>
+                        </thead>
+                        <!-- Table Head End -->
+                        <!-- Table Body Start -->
+                        <tbody>
+                        </tbody>
+                        <!-- Table Body End -->
+                    </table>
+                </div>
+            </div>
+            <!-- Cart End -->
         </section>
         <!-- Products Section End -->
     </main>
